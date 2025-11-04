@@ -13,15 +13,13 @@ We present EMPATHY OMNI, a speech–language model based on Qwen2.5-Instruct tha
 
 
 
-
-
 ## Install
 
 1. Clone this repository.
 
 ```shell
 git clone https://github.com/W311411/Empathy-Omni
-cd LLaMA-Omni
+cd Empathy-Omni
 ```
 
 2. Install packages.
@@ -30,7 +28,7 @@ cd LLaMA-Omni
 conda create -n Eomni python=3.10
 conda activate Eomni
 pip install pip==24.0
-pip install -e .
+pip install -
 ```
 
 3. Install `fairseq`.
@@ -49,20 +47,24 @@ pip install flash-attn --no-build-isolation
 
 ## Quick Start
 
-1. Download the `Llama-3.1-8B-Omni` model from 🤗[Huggingface](). 
+1. Download our model from 🤗[Huggingface](). 
 
-2. Download the `Whisper-large-v3` model.
+2. Download the `Whisper-large-v3` model from 🤗[Huggingface](https://huggingface.co/openai/whisper-large-v3).
+   
+3. Download the `Emotion2vecs` model from 🤗[Huggingface](https://huggingface.co/emotion2vec/emotion2vec_base).
 
-```shell
-import whisper
-model = whisper.load_model("large-v3", download_root="models/speech_encoder/")
-```
+4. Speech tokens are rendered to the final waveform using CosyVoice2’s flow-matching vocoder.
+
+Inference requires CosyVoice2-0.5B, available on [HuggingFace](https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B).
 
 
 ## Local Inference
 
 
-```shell
-bash omni_speech/infer/run.sh omni_speech/infer/examples
+```bash
+python3 omni_speech/infer/Eomni.py --query_audio ./omni_speech/infer/esd_male.wav 
+## s2s
+python3 omni_speech/infer/Eomni.py --query_audio ./omni_speech/infer/esd_male.wav --s2s --save_dir ./
 ```
+
 
