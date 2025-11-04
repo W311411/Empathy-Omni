@@ -9,7 +9,7 @@
 
 We present EMPATHY OMNI, a speech–language model based on Qwen2.5-Instruct that supports low-latency, high-quality empathetic interaction, jointly generating textual and acoustic responses from speech inputs.
 
-<div align="center"><img src="images/model.png" width="75%"/></div>
+<div align="center"><img src="images/omni_model.jpg" width="75%"/></div>
 
 
 
@@ -66,5 +66,3 @@ python3 omni_speech/infer/Eomni.py --query_audio ./omni_speech/infer/esd_male.wa
 ## s2s
 python3 omni_speech/infer/Eomni.py --query_audio ./omni_speech/infer/esd_male.wav --s2s --save_dir ./
 ```
-
-
