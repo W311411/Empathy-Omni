@@ -1,15 +1,15 @@
 # EMPATHY OMNI: ENABLING EMPATHETIC SPEECH RESPONSE GENERATION THROUGH LARGE LANGUAGE MODELS
 
 
-
 [![arXiv](https://img.shields.io/badge/arXiv-2409.06666-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2508.18655)
-[![code](https://img.shields.io/badge/Github-Code-keygen.svg?logo=github)](https://github.com/ictnlp/LLaMA-Omni)
-[![model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Model-blue.svg)](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni)
+[![code](https://img.shields.io/badge/GitHub-Code-keygen.svg?logo=github)](https://github.com/W311411/Empathy-Omni)
+[![model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Model-blue.svg)](https://huggingface.co/<your-org>/<your-model>)
+[![demo](https://img.shields.io/badge/Demo-Page-brightgreen.svg?logo=googlechrome)](https://w311411.github.io/omni_demo/)
 
 
 We present EMPATHY OMNI, a speech–language model based on Qwen2.5-Instruct that supports low-latency, high-quality empathetic interaction, jointly generating textual and acoustic responses from speech inputs.
 
-<div align="center"><img src="images/omni_model.jpg" width="75%"/></div>
+<div align="center"><img src="images/omni_model.jpg" width="90%"/></div>
 
 
 
@@ -28,7 +28,7 @@ cd Empathy-Omni
 conda create -n Eomni python=3.10
 conda activate Eomni
 pip install pip==24.0
-pip install -
+pip install -r requirements.txt
 ```
 
 3. Install `fairseq`.
